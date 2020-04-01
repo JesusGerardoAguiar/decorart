@@ -8,6 +8,7 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import { createGlobalStyle } from "styled-components"
 import DecoArtLogo from "../../content/assets/icons/decorart.png"
+import SectionComponent from "../components/SectionComponent"
 
 const GlobalStyles = createGlobalStyle`
   @font-face {
@@ -22,7 +23,18 @@ const GlobalStyles = createGlobalStyle`
     font-family: MonteserratB;
     src: url(${require("../../content/assets/fonts/Montserrat-Bold.otf")});
   }
+  @font-face {
+    font-family: DinRegular;
+    src: url(${require("../../content/assets/fonts/DIN-Regular.ttf")});
+  }
 `
+
+const historyTexts = [
+  "Un agradable ambiente, se aprecia el paisaje y el arte, hay risas y diversión. Experiencias que nos hacen sentir vivos. Nos imaginamos un cambio del rol del adulto mayor en nuestra sociedad. Nuestra inspiración es dignificar la vida.",
+  "Buscamos cuidar a nuestros residentes y apoyar a sus familias para que se sientan queridos, valorados, respetados e integrados a nuestra sociedad.",
+  "Nuestro equipo de trabajo reúne las capacidades humanas y técnicas necesarias para asegurar nuestra excelencia, brindando experiencias únicas de bienestar y comodidad.",
+  "Nuestras opciones de servicios generales y de estimulación sensorial permiten adecuar cada estadía a las necesidades específicas de cada uno de nuestros residentes, asegurando una experiencia única y plena."
+]
 
 class Blog extends React.Component {
   render() {
@@ -32,7 +44,6 @@ class Blog extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <GlobalStyles />
-
         <Carousel
           totalSlides={2}
           StyledCarousel={StyledCarousel}
@@ -52,6 +63,9 @@ class Blog extends React.Component {
             />
           </LogoContainer>
         </Carousel>
+        <div id="History">
+          <SectionComponent arrayTexts={historyTexts}/>
+        </div>
       </Layout>
     )
   }
@@ -75,7 +89,6 @@ export const StyledCarousel = styled(CarouselProvider)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 40rem !important;
 
   .slideInner___2mfX9 {
     display: flex;

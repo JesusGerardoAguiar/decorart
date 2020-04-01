@@ -165,7 +165,7 @@ const Header = () => {
                 <Link>Inicio</Link>
                 <LinkScroll
                   activeClass="active"
-                  to="AboutUs"
+                  to="History"
                   spy={true}
                   smooth={true}
                   duration={400}
