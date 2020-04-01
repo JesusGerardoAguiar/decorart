@@ -9,6 +9,9 @@ export const HeaderSectionRow = styled.div`
 `
 
 export const IconCircle = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 3px solid #aa5c3b;
   height: inherit;
   border-radius: 122px;

@@ -7,12 +7,12 @@ import {
   Column,
 } from "./style"
 
-const SectionHeader = ({ title, hasIcon }) => {
+const SectionHeader = ({ title, hasIcon, icon }) => {
   return (
     <HeaderSectionRow>
       {hasIcon ? (
         <IconRow>
-          <IconCircle></IconCircle>
+          <IconCircle><img src={icon} style={{ width: '10rem', marginBottom: '0px' }}/></IconCircle>
         </IconRow>
       ) : (
         <></>

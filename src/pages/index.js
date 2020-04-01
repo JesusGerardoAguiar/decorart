@@ -9,11 +9,17 @@ import Layout from "../components/layout"
 import { createGlobalStyle } from "styled-components"
 import DecoArtLogo from "../../content/assets/icons/decorart.png"
 import SectionComponent from "../components/SectionComponent"
-import ProductSection from '../components/ProductSection';
+import ProductSection from "../components/ProductSection"
 import SectionHeader from "../components/SectionHeader"
+import Testimonies from "../components/Testimonies"
+import Contact from "../components/EmailContainer"
 import Prod1 from "../../content/assets/img/prod1.jpg"
 import Prod2 from "../../content/assets/img/prod2.jpg"
 import Prod3 from "../../content/assets/img/prod3.jpg"
+
+import HistoryIcon from "../../content/assets/icons/historia.svg"
+import TestimonyIcon from "../../content/assets/icons/testimoni.svg"
+import ContactIcon from "../../content/assets/icons/contact.svg"
 
 const GlobalStyles = createGlobalStyle`
   @font-face {
@@ -75,10 +81,31 @@ class Blog extends React.Component {
             arrayTexts={historyTexts}
             title="Historia"
             hasIcon={true}
+            icon={HistoryIcon}
           />
         </div>
         <div id="products">
           <ProductSection products={products} />
+        </div>
+        <div id="Testimonies">
+          <SectionHeader
+            title="Testimonios"
+            hasIcon={true}
+            icon={TestimonyIcon}
+          />
+          <Testimonies />
+        </div>
+        <div id="Contact">
+          <SectionHeader title="Contacto" hasIcon={true}  icon={ContactIcon} />
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+            }}
+          >
+            <Contact />
+          </div>
         </div>
       </Layout>
     )
@@ -97,9 +124,6 @@ const LogoContainer = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
 `
-
-
-
 
 export const StyledCarousel = styled(CarouselProvider)`
   display: flex;

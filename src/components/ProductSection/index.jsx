@@ -5,7 +5,7 @@ import SectionHeader from "../SectionHeader"
 const ProductSection = ({ products }) => {
   return (
     <MainDiv>
-      <SectionHeader title="Productos" hasIcon={false} />
+      <SectionHeader title="Productos" hasIcon={false}  />
       <RowProducts>
         {products.map(prod => (
           <ProdCircle backgroundImg={prod} />

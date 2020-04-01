@@ -116,32 +116,29 @@ const Header = () => {
             <LinkDiv onClick={() => setOpen(false)}>
               <LinkScroll
                 activeClass="active"
-                to="AboutUs"
+                to="History"
                 onClick={() => setOpen(false)}
                 spy={true}
                 smooth={true}
                 duration={400}
               >
-                Nosotros
+                Historia
               </LinkScroll>
             </LinkDiv>
             <LinkDiv onClick={() => setOpen(false)}>
               <LinkScroll
                 activeClass="active"
-                to="Services"
+                to="Products"
                 onClick={() => setOpen(false)}
                 spy={true}
                 smooth={true}
                 duration={400}
               >
-                Servicios
+                Productos
               </LinkScroll>
             </LinkDiv>
             <LinkDiv onClick={() => setOpen(false)}>
-              <Link to="/actividades">Actividades</Link>
-            </LinkDiv>
-            <LinkDiv onClick={() => setOpen(false)}>
-              <Link to="/galeria">Galeria</Link>
+              <Link>Contacto</Link>
             </LinkDiv>
             <IconDiv>
               <img
@@ -174,7 +171,7 @@ const Header = () => {
                 </LinkScroll>
                 <LinkScroll
                   activeClass="active"
-                  to="Services"
+                  to="Products"
                   spy={true}
                   smooth={true}
                   duration={400}

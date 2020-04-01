@@ -6,7 +6,7 @@ import {
 } from './style';
 import SectionHeader from '../SectionHeader';
 
-const SectionComponent = ({ arrayTexts, title, hasIcon }) => {
+const SectionComponent = ({ arrayTexts, title, hasIcon, icon }) => {
     const renderText = () => {
       if(arrayTexts && arrayTexts.length!==0){
         return arrayTexts.map((text) => <p>{text}</p>)
@@ -14,7 +14,7 @@ const SectionComponent = ({ arrayTexts, title, hasIcon }) => {
     }
     return (
         <MainDiv>
-           <SectionHeader title={title} hasIcon={hasIcon} />
+           <SectionHeader title={title} hasIcon={hasIcon} icon={icon} />
             <TextDiv>
               <TextContainer>
                 {renderText()}
