@@ -9,6 +9,11 @@ import Layout from "../components/layout"
 import { createGlobalStyle } from "styled-components"
 import DecoArtLogo from "../../content/assets/icons/decorart.png"
 import SectionComponent from "../components/SectionComponent"
+import ProductSection from '../components/ProductSection';
+import SectionHeader from "../components/SectionHeader"
+import Prod1 from "../../content/assets/img/prod1.jpg"
+import Prod2 from "../../content/assets/img/prod2.jpg"
+import Prod3 from "../../content/assets/img/prod3.jpg"
 
 const GlobalStyles = createGlobalStyle`
   @font-face {
@@ -33,8 +38,10 @@ const historyTexts = [
   "Un agradable ambiente, se aprecia el paisaje y el arte, hay risas y diversión. Experiencias que nos hacen sentir vivos. Nos imaginamos un cambio del rol del adulto mayor en nuestra sociedad. Nuestra inspiración es dignificar la vida.",
   "Buscamos cuidar a nuestros residentes y apoyar a sus familias para que se sientan queridos, valorados, respetados e integrados a nuestra sociedad.",
   "Nuestro equipo de trabajo reúne las capacidades humanas y técnicas necesarias para asegurar nuestra excelencia, brindando experiencias únicas de bienestar y comodidad.",
-  "Nuestras opciones de servicios generales y de estimulación sensorial permiten adecuar cada estadía a las necesidades específicas de cada uno de nuestros residentes, asegurando una experiencia única y plena."
+  "Nuestras opciones de servicios generales y de estimulación sensorial permiten adecuar cada estadía a las necesidades específicas de cada uno de nuestros residentes, asegurando una experiencia única y plena.",
 ]
+
+const products = [Prod1, Prod2, Prod3]
 
 class Blog extends React.Component {
   render() {
@@ -64,7 +71,14 @@ class Blog extends React.Component {
           </LogoContainer>
         </Carousel>
         <div id="History">
-          <SectionComponent arrayTexts={historyTexts}/>
+          <SectionComponent
+            arrayTexts={historyTexts}
+            title="Historia"
+            hasIcon={true}
+          />
+        </div>
+        <div id="products">
+          <ProductSection products={products} />
         </div>
       </Layout>
     )
@@ -83,6 +97,9 @@ const LogoContainer = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
 `
+
+
+
 
 export const StyledCarousel = styled(CarouselProvider)`
   display: flex;

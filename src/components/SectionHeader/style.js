@@ -5,12 +5,11 @@ export const HeaderSectionRow = styled.div`
   flex-direction: row;
   width: 100%;
   padding-top: 3rem;
-  margin-bottom: 1rem;
   height: 15rem;
 `
 
 export const IconCircle = styled.div`
-  border: 5px solid #aa5c3b;
+  border: 3px solid #aa5c3b;
   height: inherit;
   border-radius: 122px;
   width: 15rem;
@@ -26,6 +25,9 @@ export const IconRow = styled.div`
   height: inherit;
   align-items: center;
   justify-content: flex-end;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 export const TitleContainer = styled.div`

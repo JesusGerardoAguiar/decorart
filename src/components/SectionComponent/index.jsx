@@ -6,13 +6,18 @@ import {
 } from './style';
 import SectionHeader from '../SectionHeader';
 
-const SectionComponent = ({ arrayTexts }) => {
+const SectionComponent = ({ arrayTexts, title, hasIcon }) => {
+    const renderText = () => {
+      if(arrayTexts && arrayTexts.length!==0){
+        return arrayTexts.map((text) => <p>{text}</p>)
+      }
+    }
     return (
         <MainDiv>
-           <SectionHeader title="Historia" />
+           <SectionHeader title={title} hasIcon={hasIcon} />
             <TextDiv>
               <TextContainer>
-                {arrayTexts.map((text) => <p>{text}</p>)}
+                {renderText()}
               </TextContainer>
             </TextDiv>
           </MainDiv>

@@ -10,15 +10,19 @@ import {
 const SectionHeader = ({ title, hasIcon }) => {
   return (
     <HeaderSectionRow>
-      <IconRow>
-        <IconCircle></IconCircle>
-      </IconRow>
+      {hasIcon ? (
+        <IconRow>
+          <IconCircle></IconCircle>
+        </IconRow>
+      ) : (
+        <></>
+      )}
       <TitleContainer>
         <Column style={{ width: "100%" }}>
           <h1>{title}</h1>
         </Column>
         <Column
-          style={{ borderTop: "5px solid #AA5C3B", width: "100%" }}
+          style={{ borderTop: "3px solid #AA5C3B", width: "100%" }}
         ></Column>
       </TitleContainer>
     </HeaderSectionRow>

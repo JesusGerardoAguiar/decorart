@@ -12,6 +12,7 @@ export const TextDiv = styled.div`
   p {
     font-family: DinRegular;
     line-height: 20px;
+    font-size: 20px;
   }
 `
 
@@ -21,5 +22,9 @@ export const TextContainer = styled.div`
     text-align: justify;
     padding-left: 10rem;
 
-
+    @media (max-width: 768px) {
+      padding: 3rem;
+      padding-top: 0px;
+      text-align: center;
+    }
 `
