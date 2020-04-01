@@ -28,7 +28,7 @@ const GlobalStyles = createGlobalStyle`
   }
   @font-face {
     font-family: MonteserratR;
-    src: url(${require("../../content/assets/fonts/Montserrat-Regular.otf")});
+    src: url(${require("../../content/assets/fonts/Montserrat-Medium.ttf")});
   }
   @font-face {
     font-family: MonteserratB;
@@ -130,7 +130,6 @@ export const StyledCarousel = styled(CarouselProvider)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   .slideInner___2mfX9 {
     display: flex;
     flex-direction: column;

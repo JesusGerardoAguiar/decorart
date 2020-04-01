@@ -9,19 +9,22 @@ export const TextDiv = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
+  
   p {
     font-family: DinRegular;
     line-height: 20px;
-    font-size: 20px;
+    font-size: 18px;
   }
 `
 
 export const TextContainer = styled.div`
   flex-direction: column;
-  width: 50rem;
+  width: 35rem;
     text-align: justify;
-    padding-left: 10rem;
-
+    overflow-y: auto;
+    height: 20rem;
+    margin: auto;
+    padding-top: 1rem;
     @media (max-width: 768px) {
       padding: 3rem;
       padding-top: 0px;

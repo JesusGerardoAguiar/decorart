@@ -24,7 +24,7 @@ export const IconRow = styled.div`
   z-index: 4;
   position: absolute;
   background: white;
-  width: 30%;
+  width: 25%;
   height: inherit;
   align-items: center;
   justify-content: flex-end;
