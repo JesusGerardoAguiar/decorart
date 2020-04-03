@@ -27,7 +27,8 @@ import Banquetas from "../../content/assets/img/banquetas.jpg"
 import Almohadones from "../../content/assets/img/almohadones.jpg"
 
 import Sofas from "../../content/assets/img/sofa.jpg"
-import Sofacama from "../../content/assets/img/sofacama.jpg"
+import Sofacama from "../../content/assets/img/sofacama1.jpg"
+
 import Respaldos from "../../content/assets/img/respaldos.jpg"
 
 import IconoUno from '../../content/assets/icons/iconoProd1.svg';
