@@ -15,6 +15,9 @@ export const ProcessDiv = styled.div`
     justify-content: space-evenly;
     padding-left: 5rem;
     padding-right: 5rem;
+    flex-wrap: wrap;
+
+    
 `
 export const ProcessImg = styled.div`
   background-image: url(${props => props.backgroundImg});
@@ -25,6 +28,11 @@ export const ProcessImg = styled.div`
   height: 25rem;
   border-radius: 200px;
   border: 15px solid #aa5c3b;
+  @media (max-width: 768px) {
+    width: 15rem;
+  height: 15rem;
+  margin-bottom: 0.5rem;
+  }
 `
 export const ProccessTextDiv = styled.div`
 width: 25rem;
@@ -42,5 +50,11 @@ width: 25rem;
     font-size: 18px;
     text-align: justify;
     word-break: break-word;
+  }
+
+  @media (max-width: 768px) {
+    h1{
+      margin-top: 0px;
+    }
   }
 `
