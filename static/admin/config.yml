@@ -6,13 +6,88 @@ media_folder: static/assets
 public_folder: assets
 
 collections:
-  - name: blog
-    label: Blog
-    folder: content/blog
+  - name: butaca
+    label: Butacas
+    folder: content/butaca
     create: true
     fields:
       - { name: path, label: Path }
-      - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: description, label: Description }
-      - { name: body, label: Body, widget: markdown }
+      - { name: Image, label: Imagen, widget: image }
+  - name: esquinero
+    label: Esquinero
+    folder: content/esquinero
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: Image, label: Imagen, widget: image }
+  - name: comedor
+    label: comedor
+    folder: content/comedor
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: Image, label: Imagen, widget: image }
+  - name: fundas
+    label: fundas
+    folder: content/fundas
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: Image, label: Imagen, widget: image }
+  - name: banquetas
+    label: banquetas
+    folder: content/banquetas
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: Image, label: Imagen, widget: image }
+  - name: almohadones
+    label: almohadones
+    folder: content/almohadones
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: Image, label: Imagen, widget: image }
+  - name: sofas
+    label: sofas
+    folder: content/sofas
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: Image, label: Imagen, widget: image }
+  - name: sofacama
+    label: sofacama
+    folder: content/sofacama
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: Image, label: Imagen, widget: image }
+  - name: respaldos
+    label: respaldos
+    folder: content/respaldos
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: Image, label: Imagen, widget: image }
+
+      
+
+

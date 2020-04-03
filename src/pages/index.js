@@ -13,13 +13,34 @@ import ProductSection from "../components/ProductSection"
 import SectionHeader from "../components/SectionHeader"
 import Testimonies from "../components/Testimonies"
 import Contact from "../components/EmailContainer"
-import Prod1 from "../../content/assets/img/prod1.jpg"
-import Prod2 from "../../content/assets/img/prod2.jpg"
-import Prod3 from "../../content/assets/img/prod3.jpg"
-
+import OurProcess from "../components/OurProcess"
 import HistoryIcon from "../../content/assets/icons/historia.svg"
 import TestimonyIcon from "../../content/assets/icons/testimoni.svg"
 import ContactIcon from "../../content/assets/icons/contact.svg"
+
+import Esquinero from "../../content/assets/img/esquinero.jpg"
+import Butaca from "../../content/assets/img/butaca.jpg"
+import Comedor from "../../content/assets/img/comedor.jpg"
+
+import Fundas from "../../content/assets/img/funda.jpg"
+import Banquetas from "../../content/assets/img/banquetas.jpg"
+import Almohadones from "../../content/assets/img/almohadones.jpg"
+
+import Sofas from "../../content/assets/img/sofa.jpg"
+import Sofacama from "../../content/assets/img/sofacama.jpg"
+import Respaldos from "../../content/assets/img/respaldos.jpg"
+
+import IconoUno from '../../content/assets/icons/iconoProd1.svg';
+import Icono2 from '../../content/assets/icons/iconoProd2.svg';
+import Icono3 from '../../content/assets/icons/iconoProd3.svg';
+
+import Icono4 from '../../content/assets/icons/iconoProd4.svg';
+import Icono5 from '../../content/assets/icons/iconoProd5.svg';
+import Icono6 from '../../content/assets/icons/iconoProd6.svg';
+
+import Icono7 from '../../content/assets/icons/iconoProd7.svg';
+import Icono8 from '../../content/assets/icons/iconoProd8.svg';
+import Icono9 from '../../content/assets/icons/iconoProd9.svg';
 
 const GlobalStyles = createGlobalStyle`
   @font-face {
@@ -47,7 +68,22 @@ const historyTexts = [
   "Nuestras opciones de servicios generales y de estimulación sensorial permiten adecuar cada estadía a las necesidades específicas de cada uno de nuestros residentes, asegurando una experiencia única y plena.",
 ]
 
-const products = [Prod1, Prod2, Prod3]
+const products1 = [
+  { prodImg: Butaca, text: "Butacas", icon: IconoUno },
+  { prodImg: Esquinero, text: "Esquineros", icon: Icono2 },
+  { prodImg: Comedor, text: "Juego de Comedor", icon: Icono3 },
+]
+const products2 = [
+  { prodImg: Fundas, text: "Fundas", icon: Icono4 },
+  { prodImg: Banquetas, text: "Banquetas", icon: Icono5 },
+  { prodImg: Almohadones, text: "Almohadones", icon: Icono7 },
+]
+
+const products3 = [
+  { prodImg: Sofas, text: "Sofas", icon: Icono8 },
+  { prodImg: Sofacama, text: "Sofacama", icon:  Icono6},
+  { prodImg: Respaldos, text: "Respaldos", icon: Icono9 },
+]
 
 class Blog extends React.Component {
   render() {
@@ -85,7 +121,14 @@ class Blog extends React.Component {
           />
         </div>
         <div id="products">
-          <ProductSection products={products} />
+          <ProductSection
+            products1={products1}
+            products2={products2}
+            products3={products3}
+          />
+        </div>
+        <div id="process">
+          <OurProcess />
         </div>
         <div id="Testimonies">
           <SectionHeader
@@ -96,7 +139,7 @@ class Blog extends React.Component {
           <Testimonies />
         </div>
         <div id="Contact">
-          <SectionHeader title="Contacto" hasIcon={true}  icon={ContactIcon} />
+          <SectionHeader title="Contacto" hasIcon={true} icon={ContactIcon} />
           <div
             style={{
               display: "flex",

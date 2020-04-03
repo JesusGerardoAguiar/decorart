@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
 export const MainDiv = styled.div`
   flex-direction: column;
@@ -11,6 +11,10 @@ export const RowProducts = styled.div`
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-evenly;
+  margin-bottom: 1rem;
+  @media (max-width: 768px) {
+    margin-bottom: 0px;
+  }
 `
 
 export const ProdCircle = styled.div`
@@ -21,6 +25,42 @@ export const ProdCircle = styled.div`
   width: 20rem;
   height: 20rem;
   border-radius: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  :hover {
+    transition: 1s;
+    #ProdCircle {
+      background-color: rgb(170, 92, 59, 0.5);
+      justify-content: center;
+      align-items: center;
+      border-radius: 190px;
+      display: flex !important;
+      flex-direction: column;
+      width: 100%;
+      height: -webkit-fill-available;
+
+      p{
+        font-family: MonteserratR;
+        color: white;
+        font-size: 25px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    margin-bottom: 1rem;
+  }
+`
+
+export const IconDiv = styled.div`
+width: 10rem;
+height: 8rem;
+background-image: url(${props => props.backgroundImg});
+background-position: center center;
+background-repeat: no-repeat;
+background-size: contain;
 `
 
 export const Button = styled.button`
