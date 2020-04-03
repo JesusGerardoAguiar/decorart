@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
 export const MainDiv = styled.div`
   flex-direction: column;
@@ -21,6 +21,22 @@ export const ProdCircle = styled.div`
   width: 20rem;
   height: 20rem;
   border-radius: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  :hover {
+    transition: 1s;
+    div {
+      background-color: rgb(170, 92, 59, 0.5);
+      justify-content: center;
+      align-items: center;
+      border-radius: 190px;
+      display: flex !important;
+      width: 100%;
+      height: -webkit-fill-available;
+    }
+  }
 `
 
 export const Button = styled.button`

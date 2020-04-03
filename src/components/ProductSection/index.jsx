@@ -8,7 +8,9 @@ const ProductSection = ({ products }) => {
       <SectionHeader title="Productos" hasIcon={false}  />
       <RowProducts>
         {products.map(prod => (
-          <ProdCircle backgroundImg={prod} />
+          <ProdCircle backgroundImg={prod.prodImg}>
+            <div style={{ display: 'none'}}>asdasdasdasdasdasd</div>
+          </ProdCircle>
         ))}
       </RowProducts>
       <ButtonDiv>

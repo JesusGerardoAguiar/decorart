@@ -13,9 +13,9 @@ import ProductSection from "../components/ProductSection"
 import SectionHeader from "../components/SectionHeader"
 import Testimonies from "../components/Testimonies"
 import Contact from "../components/EmailContainer"
-import Prod1 from "../../content/assets/img/prod1.jpg"
-import Prod2 from "../../content/assets/img/prod2.jpg"
-import Prod3 from "../../content/assets/img/prod3.jpg"
+import Esquinero from "../../content/assets/img/esquinero.jpg"
+import Butaca from "../../content/assets/img/butaca.jpg"
+import OurProcess from '../components/OurProcess';
 
 import HistoryIcon from "../../content/assets/icons/historia.svg"
 import TestimonyIcon from "../../content/assets/icons/testimoni.svg"
@@ -47,7 +47,7 @@ const historyTexts = [
   "Nuestras opciones de servicios generales y de estimulación sensorial permiten adecuar cada estadía a las necesidades específicas de cada uno de nuestros residentes, asegurando una experiencia única y plena.",
 ]
 
-const products = [Prod1, Prod2, Prod3]
+const products = [{ prodImg: Butaca }, { prodImg: Esquinero }]
 
 class Blog extends React.Component {
   render() {
@@ -86,6 +86,9 @@ class Blog extends React.Component {
         </div>
         <div id="products">
           <ProductSection products={products} />
+        </div>
+        <div id="process">
+          <OurProcess  />
         </div>
         <div id="Testimonies">
           <SectionHeader
