@@ -42,6 +42,7 @@ import Icono6 from "../../content/assets/icons/iconoProd6.svg"
 import Icono7 from "../../content/assets/icons/iconoProd7.svg"
 import Icono8 from "../../content/assets/icons/iconoProd8.svg"
 import Icono9 from "../../content/assets/icons/iconoProd9.svg"
+import { Helmet } from "react-helmet"
 
 const GlobalStyles = createGlobalStyle`
   @font-face {
@@ -100,9 +101,9 @@ class Blog extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
-
     return (
       <Layout location={this.props.location} title={siteTitle}>
+
         <GlobalStyles />
         <Carousel
           totalSlides={2}
@@ -161,6 +162,7 @@ class Blog extends React.Component {
             <Contact />
           </div>
         </div>
+      
       </Layout>
     )
   }
