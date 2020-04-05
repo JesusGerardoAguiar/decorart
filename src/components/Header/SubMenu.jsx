@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   },
   paper: {
     marginRight: theme.spacing(2),
-    backgroundColor: "rgba(255,255,255,0.5)"
+    backgroundColor: "white"
   },
 }));
 
@@ -55,14 +55,14 @@ export default function MenuListComposition() {
 
   return (
     <div className={classes.root}>
-        <Link
+        <a
           ref={anchorRef}
           aria-controls={open ? 'menu-list-grow' : undefined}
           aria-haspopup="true"
           onClick={handleToggle}
         >
           Productos
-        </Link>
+        </a>
         <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
           {({ TransitionProps, placement }) => (
             <Grow
@@ -72,17 +72,17 @@ export default function MenuListComposition() {
               <Paper className={classes.paper}>
                 <ClickAwayListener onClickAway={handleClose}>
                   <MenuList autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
-                    <MenuItem onClick={handleClose}><Link>Butacas</Link></MenuItem>
-                    <MenuItem onClick={handleClose}><Link>Esquineros</Link></MenuItem>
-                    <MenuItem onClick={handleClose}><Link>Comedor</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link to="/butacas">Butacas</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link to="/esquineros">Esquineros</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link to="/comedor">Comedor</Link></MenuItem>
 
-                    <MenuItem onClick={handleClose}><Link>Fundas</Link></MenuItem>
-                    <MenuItem onClick={handleClose}><Link>Banquetas</Link></MenuItem>
-                    <MenuItem onClick={handleClose}><Link>Almohadones</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link to='/fundas'>Fundas</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link to='/banquetas'>Banquetas</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link to='/almohadones'>Almohadones</Link></MenuItem>
 
-                    <MenuItem onClick={handleClose}><Link>Sofas</Link></MenuItem>
-                    <MenuItem onClick={handleClose}><Link>Sofacama</Link></MenuItem>
-                    <MenuItem onClick={handleClose}><Link>Respaldos</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link to="/sofas">Sofas</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link to="/sofacama">Sofacama</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link to="/respaldos">Respaldos</Link></MenuItem>
                   </MenuList>
                 </ClickAwayListener>
               </Paper>

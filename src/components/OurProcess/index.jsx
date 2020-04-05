@@ -7,7 +7,7 @@ import SofaReta from '../../../content/assets/img/reta.jpg';
 const OurProcess = () => {
   return (
     <>
-      <SectionHeader title="Nuestro Proceso" hasIcon={false} />
+      <SectionHeader title="Nuestro Proceso" hasIcon={false} marginTop={0}/>
       <MainDiv>
         <ProcessDiv>
           <ProccessTextDiv>

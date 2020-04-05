@@ -46,6 +46,7 @@ export const Column = styled.div`
   text-align: center;
 
   h1 {
+    margin-top: ${props => `${props.marginTop}!important`};
     font-family: "MonteserratR";
     color: #aa5c3b;
     text-transform: uppercase;
