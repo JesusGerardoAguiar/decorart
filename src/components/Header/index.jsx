@@ -82,7 +82,8 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-const Header = () => {
+const Header = ({ location }) => {
+  console.log(location)
   const [open, setOpen] = useState(false)
   const [anchorEl, setAnchorEl] = React.useState(null)
 
@@ -169,7 +170,7 @@ const Header = () => {
     } else if (matches.large) {
       console.log(anchorEl)
       return (
-        <MainDiv>
+        <MainDiv pathname={location.pathname}>
           <LinksContainerDiv>
             <LinkDiv>
               <InsideLinkDiv>

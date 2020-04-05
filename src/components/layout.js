@@ -25,8 +25,8 @@ const GlobalStyles = createGlobalStyle`
 
 class Layout extends React.Component {
   render() {
-    const { children } = this.props
-    let header = (<Header />)
+    const { children, location } = this.props
+    let header = (<Header location={location} />)
     return (
       <Wrapper>
         <div>

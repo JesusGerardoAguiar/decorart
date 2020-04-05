@@ -7,13 +7,13 @@ export const InsideLinkDiv = styled.div`
   margin-left: 11.555555rem;
   flex-wrap: wrap;
   @media (max-width: 768px) {
-   margin-left: 0rem;
+    margin-left: 0rem;
   }
 `
 
 export const LinkDiv = styled.div`
   font-size: 15px;
-  color: #AA5C3B;
+  color: #aa5c3b;
   font-family: "MonteserratR";
   font-weight: 300;
   text-align: center;
@@ -26,23 +26,23 @@ export const LinkDiv = styled.div`
   text-transform: uppercase;
   a {
     text-decoration: none !important;
-    color: #AA5C3B !important;
+    color: #aa5c3b !important;
     box-shadow: none;
     margin-right: 4rem;
     text-transform: uppercase;
   }
 
   @media (max-width: 768px) {
-    color: #AA5C3B;
+    color: #aa5c3b;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
     width: 100%;
     a {
-    width: 100%;
-margin-right: 0px;
+      width: 100%;
+      margin-right: 0px;
       text-decoration: none;
-      color: #AA5C3B;
+      color: #aa5c3b;
     }
   }
 `
@@ -66,23 +66,24 @@ export const LinksContainerDiv = styled.div`
   @media (max-width: 768px) {
     height: 16rem;
     margin-bottom: 10px;
-   }
+  }
 `
 
 export const MainDiv = styled.nav`
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: ${props => (props.pathname !== "/" ? "relative" : "absolute")};
   z-index: 1;
   width: 100%;
-  background-color: rgba(255,255,255,0.5);
+  background-color: ${props =>
+    props.pathname !== "/" ? "rgb(170, 92, 59, 0.5)" : "rgba(255,255,255,0.5)"};
   @media (max-width: 768px) {
     padding-right: 1rem;
     padding-left: 1rem;
     flex-direction: row;
     img {
       margin-bottom: 0px;
-      width: 3rem!important;
+      width: 3rem !important;
     }
     justify-content: space-between;
     align-items: center;
@@ -147,9 +148,8 @@ export const IconDiv = styled.div`
     width: 100%;
     justify-content: center;
     margin-top: 2rem;
-    img{
+    img {
       margin-right: 1rem;
-      
     }
   }
 `

@@ -35,7 +35,7 @@ const OurProcess = () => {
         <ProcessDiv>
           <ProcessImg backgroundImg={SofaReta}></ProcessImg>
           <ProccessTextDiv>
-            <h1>Retapiado</h1>
+            <h1>Retapizado</h1>
             <p>
               Lo importante en un retapizado es distinguir si vale la pena o no
               invertir en un mueble usado. Cuando el sofa fue bien armado desde
