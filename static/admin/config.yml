@@ -10,11 +10,13 @@ collections:
     label: Butacas
     folder: content/butaca
     create: true
+    identifier_field: name
     fields:
-      - { name: path, label: Path }
+      - { name: path, label: Path, value: butacas }
       - { name: title, label: Title }
       - { name: description, label: Description }
       - { name: Image, label: Imagen, widget: image }
+      - { label: identifier, name: identifier, widget: "hidden", default: "butacas" }
   - name: esquinero
     label: Esquinero
     folder: content/esquinero
@@ -24,6 +26,7 @@ collections:
       - { name: title, label: Title }
       - { name: description, label: Description }
       - { name: Image, label: Imagen, widget: image }
+      - { label: identifier, name: identifier, widget: "hidden", default: "esquineros" }
   - name: comedor
     label: comedor
     folder: content/comedor
@@ -33,6 +36,7 @@ collections:
       - { name: title, label: Title }
       - { name: description, label: Description }
       - { name: Image, label: Imagen, widget: image }
+      - { label: identifier, name: identifier, widget: "hidden", default: "comedor" }
   - name: fundas
     label: fundas
     folder: content/fundas
@@ -42,6 +46,7 @@ collections:
       - { name: title, label: Title }
       - { name: description, label: Description }
       - { name: Image, label: Imagen, widget: image }
+      - { label: identifier, name: identifier, widget: "hidden", default: "fundas" }
   - name: banquetas
     label: banquetas
     folder: content/banquetas
@@ -51,6 +56,7 @@ collections:
       - { name: title, label: Title }
       - { name: description, label: Description }
       - { name: Image, label: Imagen, widget: image }
+      - { label: identifier, name: identifier, widget: "hidden", default: "banquetas" }
   - name: almohadones
     label: almohadones
     folder: content/almohadones
@@ -60,6 +66,7 @@ collections:
       - { name: title, label: Title }
       - { name: description, label: Description }
       - { name: Image, label: Imagen, widget: image }
+      - { label: identifier, name: identifier, widget: "hidden", default: "almohadones" }
   - name: sofas
     label: sofas
     folder: content/sofas
@@ -69,6 +76,7 @@ collections:
       - { name: title, label: Title }
       - { name: description, label: Description }
       - { name: Image, label: Imagen, widget: image }
+      - { label: identifier, name: identifier, widget: "hidden", default: "sofas" }
   - name: sofacama
     label: sofacama
     folder: content/sofacama
@@ -78,6 +86,7 @@ collections:
       - { name: title, label: Title }
       - { name: description, label: Description }
       - { name: Image, label: Imagen, widget: image }
+      - { label: identifier, name: identifier, widget: "hidden", default: "sofacama" }
   - name: respaldos
     label: respaldos
     folder: content/respaldos
@@ -87,6 +96,8 @@ collections:
       - { name: title, label: Title }
       - { name: description, label: Description }
       - { name: Image, label: Imagen, widget: image }
+      - { label: identifier, name: identifier, widget: "hidden", default: "respaldos" }
+
 
       
 

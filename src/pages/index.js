@@ -31,17 +31,17 @@ import Sofacama from "../../content/assets/img/sofacama1.jpg"
 
 import Respaldos from "../../content/assets/img/respaldos.jpg"
 
-import IconoUno from '../../content/assets/icons/iconoProd1.svg';
-import Icono2 from '../../content/assets/icons/iconoProd2.svg';
-import Icono3 from '../../content/assets/icons/iconoProd3.svg';
+import IconoUno from "../../content/assets/icons/iconoProd1.svg"
+import Icono2 from "../../content/assets/icons/iconoProd2.svg"
+import Icono3 from "../../content/assets/icons/iconoProd3.svg"
 
-import Icono4 from '../../content/assets/icons/iconoProd4.svg';
-import Icono5 from '../../content/assets/icons/iconoProd5.svg';
-import Icono6 from '../../content/assets/icons/iconoProd6.svg';
+import Icono4 from "../../content/assets/icons/iconoProd4.svg"
+import Icono5 from "../../content/assets/icons/iconoProd5.svg"
+import Icono6 from "../../content/assets/icons/iconoProd6.svg"
 
-import Icono7 from '../../content/assets/icons/iconoProd7.svg';
-import Icono8 from '../../content/assets/icons/iconoProd8.svg';
-import Icono9 from '../../content/assets/icons/iconoProd9.svg';
+import Icono7 from "../../content/assets/icons/iconoProd7.svg"
+import Icono8 from "../../content/assets/icons/iconoProd8.svg"
+import Icono9 from "../../content/assets/icons/iconoProd9.svg"
 
 const GlobalStyles = createGlobalStyle`
   @font-face {
@@ -70,20 +70,30 @@ const historyTexts = [
 ]
 
 const products1 = [
-  { prodImg: Butaca, text: "Butacas", icon: IconoUno },
-  { prodImg: Esquinero, text: "Esquineros", icon: Icono2 },
-  { prodImg: Comedor, text: "Juego de Comedor", icon: Icono3 },
+  { prodImg: Butaca, text: "Butacas", icon: IconoUno, link: "/butacas" },
+  { prodImg: Esquinero, text: "Esquineros", icon: Icono2, link: "/esquineros" },
+  {
+    prodImg: Comedor,
+    text: "Juego de Comedor",
+    icon: Icono3,
+    link: "/comedor",
+  },
 ]
 const products2 = [
-  { prodImg: Fundas, text: "Fundas", icon: Icono4 },
-  { prodImg: Banquetas, text: "Banquetas", icon: Icono5 },
-  { prodImg: Almohadones, text: "Almohadones", icon: Icono7 },
+  { prodImg: Fundas, text: "Fundas", icon: Icono4, link: "/fundas" },
+  { prodImg: Banquetas, text: "Banquetas", icon: Icono5, link: "/banquetas" },
+  {
+    prodImg: Almohadones,
+    text: "Almohadones",
+    icon: Icono7,
+    link: "/almohadones",
+  },
 ]
 
 const products3 = [
-  { prodImg: Sofas, text: "Sofas", icon: Icono8 },
-  { prodImg: Sofacama, text: "Sofacama", icon:  Icono6},
-  { prodImg: Respaldos, text: "Respaldos", icon: Icono9 },
+  { prodImg: Sofas, text: "Sofas", icon: Icono8, link: "/sofas" },
+  { prodImg: Sofacama, text: "Sofacama", icon: Icono6, link: "/sofacama" },
+  { prodImg: Respaldos, text: "Respaldos", icon: Icono9, link: "/respaldos" },
 ]
 
 class Blog extends React.Component {

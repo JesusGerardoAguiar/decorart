@@ -40,6 +40,17 @@ export const ProdCircle = styled.div`
       flex-direction: column;
       width: 100%;
       height: -webkit-fill-available;
+      
+      a{
+        box-shadow: none;
+        color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: inherit;
+        height: inherit;
+      }
 
       p{
         font-family: MonteserratR;

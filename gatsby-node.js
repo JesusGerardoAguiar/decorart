@@ -4,22 +4,17 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
-  const blogPost = path.resolve(`./src/templates/blog-post.js`)
+  const productPost = path.resolve(`./src/templates/product-template.js`)
   return graphql(
     `
       {
-        allMdx(
-          sort: { fields: [frontmatter___date], order: DESC }
-          limit: 1000
-        ) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-              frontmatter {
-                title
-              }
+        allMdx {
+          nodes {
+            frontmatter {
+              identifier
+              description
+              Image
+              title
             }
           }
         }
@@ -29,21 +24,16 @@ exports.createPages = ({ graphql, actions }) => {
     if (result.errors) {
       throw result.errors
     }
-
+    console.log(result)
     // Create blog posts pages.
-    const posts = result.data.allMdx.edges
+    const products = result.data.allMdx.nodes
 
-    posts.forEach((post, index) => {
-      const previous = index === posts.length - 1 ? null : posts[index + 1].node
-      const next = index === 0 ? null : posts[index - 1].node
-
+    products.forEach((product, index) => {
       createPage({
-        path: `blog${post.node.fields.slug}`,
-        component: blogPost,
+        path: `${product.frontmatter.identifier}`,
+        component: productPost,
         context: {
-          slug: post.node.fields.slug,
-          previous,
-          next,
+          identifier: product.frontmatter.identifier,
         },
       })
     })
@@ -58,7 +48,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   if (node.internal.type === `Mdx`) {
     const value = createFilePath({ node, getNode })
     createNodeField({
-      name: `slug`,
+      name: `identifier`,
       node,
       value,
     })
