@@ -7,6 +7,7 @@ import {
   ButtonDiv,
   IconDiv,
 } from "./style"
+import { Link } from "gatsby"
 import SectionHeader from "../SectionHeader"
 
 const ProductSection = ({ products1, products2, products3 }) => {
@@ -17,8 +18,10 @@ const ProductSection = ({ products1, products2, products3 }) => {
         {products1.map(prod => (
           <ProdCircle backgroundImg={prod.prodImg}>
             <div style={{ display: "none" }} id="ProdCircle">
-              <IconDiv backgroundImg={prod.icon} />
-              <p>{prod.text}</p>
+              <Link to={prod.link}>
+                <IconDiv backgroundImg={prod.icon} />
+                <p>{prod.text}</p>
+              </Link>
             </div>
           </ProdCircle>
         ))}
@@ -27,8 +30,10 @@ const ProductSection = ({ products1, products2, products3 }) => {
         {products2.map(prod => (
           <ProdCircle backgroundImg={prod.prodImg}>
             <div style={{ display: "none" }} id="ProdCircle">
-              <IconDiv backgroundImg={prod.icon} />
-              <p>{prod.text}</p>
+              <Link to={prod.link}>
+                <IconDiv backgroundImg={prod.icon} />
+                <p>{prod.text}</p>
+              </Link>
             </div>
           </ProdCircle>
         ))}
@@ -37,8 +42,10 @@ const ProductSection = ({ products1, products2, products3 }) => {
         {products3.map(prod => (
           <ProdCircle backgroundImg={prod.prodImg}>
             <div style={{ display: "none" }} id="ProdCircle">
-              <IconDiv backgroundImg={prod.icon} />
-              <p>{prod.text}</p>
+              <Link to={prod.link}>
+                <IconDiv backgroundImg={prod.icon} />
+                <p>{prod.text}</p>
+              </Link>
             </div>
           </ProdCircle>
         ))}

@@ -7,7 +7,7 @@ import {
   Column,
 } from "./style"
 
-const SectionHeader = ({ title, hasIcon, icon }) => {
+const SectionHeader = ({ title, hasIcon, icon, marginTop }) => {
   return (
     <HeaderSectionRow>
       {hasIcon ? (
@@ -18,7 +18,7 @@ const SectionHeader = ({ title, hasIcon, icon }) => {
         <></>
       )}
       <TitleContainer>
-        <Column style={{ width: "100%" }}>
+        <Column style={{ width: "100%" }} marginTop={marginTop}>
           <h1>{title}</h1>
         </Column>
         <Column

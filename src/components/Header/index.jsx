@@ -82,7 +82,8 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-const Header = () => {
+const Header = ({ location }) => {
+  console.log(location)
   const [open, setOpen] = useState(false)
   const [anchorEl, setAnchorEl] = React.useState(null)
 
@@ -128,30 +129,59 @@ const Header = () => {
 
             <LinkDiv onClick={() => setOpen(false)}>
               <LinkScroll
+                onClick={() => setOpen(false)}
                 activeClass="active"
                 to="History"
-                onClick={() => setOpen(false)}
                 spy={true}
                 smooth={true}
                 duration={400}
               >
-                Historia
+                <Link to="" style={{ marginRight: "0px" }}>
+                  Historia
+                </Link>
               </LinkScroll>
             </LinkDiv>
             <LinkDiv onClick={() => setOpen(false)}>
               <LinkScroll
-                activeClass="active"
-                to="Products"
                 onClick={() => setOpen(false)}
+                activeClass="active"
+                to="products"
                 spy={true}
                 smooth={true}
                 duration={400}
               >
-                Productos
+                <Link to="" style={{ marginRight: "0px" }}>
+                  Productos
+                </Link>
               </LinkScroll>
             </LinkDiv>
             <LinkDiv onClick={() => setOpen(false)}>
-              <Link>Contacto</Link>
+              <LinkScroll
+                onClick={() => setOpen(false)}
+                activeClass="active"
+                to="process"
+                spy={true}
+                smooth={true}
+                duration={400}
+              >
+                <Link to="" style={{ marginRight: "0px" }}>
+                  Proceso
+                </Link>
+              </LinkScroll>
+            </LinkDiv>
+            <LinkDiv onClick={() => setOpen(false)}>
+              <LinkScroll
+                onClick={() => setOpen(false)}
+                activeClass="active"
+                to="Contact"
+                spy={true}
+                smooth={true}
+                duration={400}
+              >
+                <Link to="" style={{ marginRight: "0px" }}>
+                  Contacto
+                </Link>
+              </LinkScroll>
             </LinkDiv>
             <IconDiv>
               <img
@@ -169,7 +199,7 @@ const Header = () => {
     } else if (matches.large) {
       console.log(anchorEl)
       return (
-        <MainDiv>
+        <MainDiv pathname={location.pathname}>
           <LinksContainerDiv>
             <LinkDiv>
               <InsideLinkDiv>
@@ -181,19 +211,33 @@ const Header = () => {
                   smooth={true}
                   duration={400}
                 >
-                  Historia
+                  <Link to="" style={{ marginRight: "0px" }}>
+                    Historia
+                  </Link>
                 </LinkScroll>
                 <Submenu />
                 <LinkScroll
                   activeClass="active"
-                  to="Products"
+                  to="process"
                   spy={true}
                   smooth={true}
                   duration={400}
                 >
-                  Servicios
+                  <Link to="" style={{ marginRight: "0px" }}>
+                    Proceso
+                  </Link>
                 </LinkScroll>
-                <Link>Contacto</Link>
+                <LinkScroll
+                  activeClass="active"
+                  to="Contact"
+                  spy={true}
+                  smooth={true}
+                  duration={400}
+                >
+                  <Link to="" style={{ marginRight: "0px" }}>
+                    Contacto
+                  </Link>
+                </LinkScroll>
               </InsideLinkDiv>
             </LinkDiv>
             <IconDiv>
