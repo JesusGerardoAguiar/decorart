@@ -123,6 +123,24 @@ module.exports = {
         ],
       },
     },
+    // {
+    //   resolve: "gatsby-plugin-whatshelp",
+    //   options: {
+    //     facebook: "1629986620602076", // Facebook page ID
+    //     email: "aguiarf.j16@gmail.com", // Email
+    //     greeting_message: "Hello", // Text of greeting message
+    //     call_to_action: "Call to Action", // Call to action
+    //     position: "right", // Position may be 'right' or 'left'
+    //     order: "facebook,", // Order of buttons
+    //     branding: false, // Show branding string
+    //     mobile: true, // Mobile version enabled
+    //     desktop: true, // Desktop version enabled
+    //     greeting: true, // Greeting message enabled
+    //     shift_vertical: 0, // Vertical position, px
+    //     shift_horizontal: 0, // Horizontal position, px
+    //     domain: "localhost:8000.com", // site domain
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
