@@ -35,63 +35,63 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/butaca`,
-        name: `assets`,
+        name: `butaca`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/esquinero`,
-        name: `assets`,
+        name: `esquinero`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/almohadones`,
-        name: `assets`,
+        name: `almohadones`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/banquetas`,
-        name: `assets`,
+        name: `banquetas`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/comedor`,
-        name: `assets`,
+        name: `comedor`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/fundas`,
-        name: `assets`,
+        name: `fundas`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/respaldos`,
-        name: `assets`,
+        name: `respaldos`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/sofacama`,
-        name: `assets`,
+        name: `sofacama`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/sofas`,
-        name: `assets`,
+        name: `sofas`,
       },
     },
     {

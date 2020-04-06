@@ -10,7 +10,6 @@ collections:
     label: Butacas
     folder: content/butaca
     create: true
-    identifier_field: name
     fields:
       - { name: path, label: Path, value: butacas }
       - { name: title, label: Title }
