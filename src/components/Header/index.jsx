@@ -236,21 +236,30 @@ const Header = ({ location }) => {
               </InsideLinkDiv>
             </LinkDiv>
             <IconDiv>
-              <img
-                src={Facebook}
-                style={{ width: "2rem", marginBottom: 0, cursor: "pointer" }}
-              />
-              <img
-                src={Instagram}
-                style={{ width: "2rem", marginBottom: 0, cursor: "pointer" }}
-              />
+            <a
+                href="https://www.facebook.com/decorartamoblamientos/"
+                target="_blank"
+              >
+                <img
+                  src={Facebook}
+                  style={{ width: "2rem", marginBottom: 0, cursor: "pointer" }}
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/decorartamoblamientos/"
+                target="_blank"
+              >
+                <img
+                  src={Instagram}
+                  style={{ width: "2rem", marginBottom: 0, cursor: "pointer" }}
+                />
+              </a>
             </IconDiv>
           </LinksContainerDiv>
         </MainDiv>
       )
     }
   }
-
   return (
     <>
       <Media queries={{ small: { maxWidth: 768 }, large: { minWidth: 769 } }}>

@@ -144,6 +144,13 @@ export const IconDiv = styled.div`
   width: 5rem;
   justify-content: space-evenly;
 
+  a{
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   @media (max-width: 768px) {
     width: 100%;
     justify-content: center;
