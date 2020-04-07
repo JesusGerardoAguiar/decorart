@@ -42,6 +42,9 @@ import Icono6 from "../../content/assets/icons/iconoProd6.svg"
 import Icono7 from "../../content/assets/icons/iconoProd7.svg"
 import Icono8 from "../../content/assets/icons/iconoProd8.svg"
 import Icono9 from "../../content/assets/icons/iconoProd9.svg"
+
+import Icono10 from '../../content/assets/icons/cortinas.svg'
+import Cortinas from '../../content/assets/img/cortinas.png'
 import { Helmet } from "react-helmet"
 
 const GlobalStyles = createGlobalStyle`
@@ -97,6 +100,11 @@ const products3 = [
   { prodImg: Respaldos, text: "Respaldos", icon: Icono9, link: "/respaldos" },
 ]
 
+const products4 = [
+  { prodImg: Cortinas, text: "Cortinas", icon: Icono10},
+
+]
+
 class Blog extends React.Component {
   render() {
     const { data } = this.props
@@ -137,6 +145,7 @@ class Blog extends React.Component {
             products1={products1}
             products2={products2}
             products3={products3}
+            products4={products4}
           />
         </div>
         <div id="process">

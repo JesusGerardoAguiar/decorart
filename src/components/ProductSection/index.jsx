@@ -6,11 +6,13 @@ import {
   Button,
   ButtonDiv,
   IconDiv,
+  SaleCircle,
 } from "./style"
 import { Link } from "gatsby"
 import SectionHeader from "../SectionHeader"
+import Icono11 from "../../../content/assets/icons/sale.svg"
 
-const ProductSection = ({ products1, products2, products3 }) => {
+const ProductSection = ({ products1, products2, products3, products4 }) => {
   return (
     <MainDiv>
       <SectionHeader title="Productos" hasIcon={false} />
@@ -49,6 +51,24 @@ const ProductSection = ({ products1, products2, products3 }) => {
             </div>
           </ProdCircle>
         ))}
+      </RowProducts>
+      <RowProducts>
+        {products4.map(prod => (
+          <ProdCircle backgroundImg={prod.prodImg}>
+            <div style={{ display: "none" }} id="ProdCircle">
+              <IconDiv backgroundImg={prod.icon} />
+              <p>{prod.text}</p>
+            </div>
+          </ProdCircle>
+        ))}
+        <SaleCircle>
+          <div style={{ display: "none" }} id="ProdCircle">
+            <Link to='/sale'>
+              <IconDiv backgroundImg={Icono11} />
+              <p>Sale</p>
+            </Link>
+          </div>
+        </SaleCircle>
       </RowProducts>
     </MainDiv>
   )

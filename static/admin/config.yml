@@ -96,6 +96,16 @@ collections:
       - { name: description, label: Description }
       - { name: Image, label: Imagen, widget: image }
       - { label: identifier, name: identifier, widget: "hidden", default: "respaldos" }
+  - name: sale
+    label: Sale
+    folder: content/sale
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: Image, label: Imagen, widget: image }
+      - { label: identifier, name: identifier, widget: "hidden", default: "sale" }
 
 
       
