@@ -28,7 +28,7 @@ export const ProdCircle = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
+  background-color: #aa5c3b;
   :hover {
     transition: 1s;
     #ProdCircle {
@@ -40,8 +40,8 @@ export const ProdCircle = styled.div`
       flex-direction: column;
       width: 100%;
       height: -webkit-fill-available;
-      
-      a{
+
+      a {
         box-shadow: none;
         color: transparent;
         display: flex;
@@ -52,7 +52,7 @@ export const ProdCircle = styled.div`
         height: inherit;
       }
 
-      p{
+      p {
         font-family: MonteserratR;
         color: white;
         font-size: 25px;
@@ -65,13 +65,54 @@ export const ProdCircle = styled.div`
   }
 `
 
+export const SaleCircle = styled.div`
+  width: 20rem;
+  height: 20rem;
+  border-radius: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #aa5c3b;
+  #ProdCircle {
+    background-color: rgb(170, 92, 59, 0.5);
+    justify-content: center;
+    align-items: center;
+    border-radius: 190px;
+    display: flex !important;
+    flex-direction: column;
+    width: 100%;
+    height: -webkit-fill-available;
+
+    a {
+      box-shadow: none;
+      color: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: inherit;
+      height: inherit;
+    }
+
+    p {
+      font-family: MonteserratR;
+      color: white;
+      font-size: 25px;
+      margin-bottom: 0px;
+    }
+  }
+  @media (max-width: 768px) {
+    margin-bottom: 1rem;
+  }
+`
+
 export const IconDiv = styled.div`
-width: 10rem;
-height: 8rem;
-background-image: url(${props => props.backgroundImg});
-background-position: center center;
-background-repeat: no-repeat;
-background-size: contain;
+  width: 10rem;
+  height: 8rem;
+  background-image: url(${props => props.backgroundImg});
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
 `
 
 export const Button = styled.button`

@@ -1,25 +1,22 @@
 import React, { useState, useEffect } from "react"
 import {
   MainDiv,
-  LogoDiv,
   LinksContainerDiv,
   LinkDiv,
   InsideLinkDiv,
   IconDiv,
 } from "./styles"
-// import FeliciaLogo from "../../../content/assets/icons/feliciaarriba.svg"
 import Facebook from "../../../content/assets/icons/facebook.svg"
 import Instagram from "../../../content/assets/icons/instagram.svg"
 import { Link } from "gatsby"
 import Drawer from "@material-ui/core/Drawer"
 import { makeStyles, useTheme } from "@material-ui/core/styles"
 import IconButton from "@material-ui/core/IconButton"
-// import Hamburguer from '../../../content/assets/icons/hamburger.svg'
-// import Close from '../../../content/assets/icons/close.svg'
+import Hamburguer from '../../../content/assets/icons/hamburguer.svg'
+import Close from '../../../content/assets/icons/close.svg'
+import DecorartLogo from '../../../content/assets/gatsby-icon.png'
 import Media from "react-media"
 import Scroll from "react-scroll"
-import Menu from "@material-ui/core/Menu"
-import MenuItem from "@material-ui/core/MenuItem"
 import Submenu from "./SubMenu"
 
 const LinkScroll = Scroll.Link
@@ -102,10 +99,9 @@ const Header = ({ location }) => {
       return (
         <div>
           <MainDiv>
-            {/* <div onClick={() => setOpen(true)}><img src={Hamburguer} style={{width: '3rem'}}/></div> */}
-            <div onClick={() => setOpen(true)}>hambur</div>
+            <div onClick={() => setOpen(true)}><img src={Hamburguer} style={{width: '3rem'}}/></div>
 
-            <div>logo</div>
+            <div><img src={DecorartLogo} style={{ width: '3rem' }}/></div>
           </MainDiv>
           <Drawer
             className={classes.drawer}
@@ -119,8 +115,7 @@ const Header = ({ location }) => {
           >
             <div className={classes.drawerHeader}>
               <IconButton onClick={() => setOpen(false)}>
-                {/* <div><img src={Close}  style={{width: '1rem'}}/></div> */}
-                <div>close</div>
+                <div><img src={Close}  style={{width: '1rem'}}/></div>
               </IconButton>
             </div>
             <LinkDiv onClick={() => setOpen(false)}>
@@ -241,21 +236,30 @@ const Header = ({ location }) => {
               </InsideLinkDiv>
             </LinkDiv>
             <IconDiv>
-              <img
-                src={Facebook}
-                style={{ width: "2rem", marginBottom: 0, cursor: "pointer" }}
-              />
-              <img
-                src={Instagram}
-                style={{ width: "2rem", marginBottom: 0, cursor: "pointer" }}
-              />
+            <a
+                href="https://www.facebook.com/decorartamoblamientos/"
+                target="_blank"
+              >
+                <img
+                  src={Facebook}
+                  style={{ width: "2rem", marginBottom: 0, cursor: "pointer" }}
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/decorartamoblamientos/"
+                target="_blank"
+              >
+                <img
+                  src={Instagram}
+                  style={{ width: "2rem", marginBottom: 0, cursor: "pointer" }}
+                />
+              </a>
             </IconDiv>
           </LinksContainerDiv>
         </MainDiv>
       )
     }
   }
-
   return (
     <>
       <Media queries={{ small: { maxWidth: 768 }, large: { minWidth: 769 } }}>

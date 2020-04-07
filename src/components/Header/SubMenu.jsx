@@ -83,6 +83,7 @@ export default function MenuListComposition() {
                     <MenuItem onClick={handleClose}><Link to="/sofas">Sofas</Link></MenuItem>
                     <MenuItem onClick={handleClose}><Link to="/sofacama">Sofacama</Link></MenuItem>
                     <MenuItem onClick={handleClose}><Link to="/respaldos">Respaldos</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link to="/sale">Sale</Link></MenuItem>
                   </MenuList>
                 </ClickAwayListener>
               </Paper>
