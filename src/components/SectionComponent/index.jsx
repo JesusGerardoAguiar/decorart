@@ -16,26 +16,26 @@ const SectionComponent = ({ arrayTexts, title, hasIcon, icon }) => {
           <p>
             Decorart es una empresa independiente fundada en 1981, con casi 40
             años de experiencia en el rubro de tapicería, cortinados,
-            telas,carpintería alfombras. Somos una empresa la cual ofrece la
+            telas, carpintería, alfombras. Somos una empresa la cual ofrece la
             posibilidad de personalización completa, para que cada cliente
             encuentre el mueble que mas le guste y se ajuste a sus necesidades
-            de tamaño, tapizado , colores, todo es personalizable.<br /><br /> Hoy en día,
+            de tamaño, tapizado, colores, todo es personalizable.<br /><br /> Hoy en día,
             resulta cada vez más difícil encontrar empresas con tantos años de
             experiencia y que ofrezcan productos de calidad, hechos con
             materiales de altísima calidad y con un exelente respaldo postventa
             ofrecido por sus propios dueños. Nuestros clientes buscan diseño
             acompañado de la mano de un buen diseño y saber que tienen la
             seguridad de estar incorporando diseño en sus hogares con muebles de
-            una exelente calidad. 
+            una excelente calidad. 
             <br /><br />Trabajamos dia a dia para que eso sea posible.
             A partir de esto surge el nombre de Julio Imbriani como dueño y como
             uno de los tapiceros mas nombrados en uruguay en los últimos
             tiempos. Se ha lucido y expuesto durante mucho tiempo con su
             especializada y calificada mano de obra en diferentes mueblerías de
             nombre como Revello, Cobarrer, etc. Dentro de su cartera de clientes
-            y trabajos se destacan varias embajadas ( Suiza Holanda Guatemala
-            Italia Alemania) Conaprole, Price Waterhouse Coopers, Consorcio del
-            Este, Museo Nacional de Artes Visuales y muchos mas. Tambien elegido
+            y trabajos se destacan varias embajadas (Suiza, Holanda, Guatemala,
+            Italia, Alemania), Conaprole, Price Waterhouse Coopers, Consorcio del
+            Este, Museo Nacional de Artes Visuales y muchos más. Tambien elegido
             por varios diseñadores de interiores para llevar adelante sus
             diferentes proyectos.<br /><br /> Con su gran gusto e interés por la decoración
             apararece Teresa De Marco aportando siempre su cuota calida para
