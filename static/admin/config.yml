@@ -110,8 +110,11 @@ collections:
     label: Proyectos
     folder: content/proyectos
     create: true
+    identifier_field: identifier
     fields:
       - { name: ImageProyect, label: ImageP, widget: image }
+      - { name: description, label: Description }
+      - { label: identifier, name: identifier, widget: "hidden", default: "projects" }
 
 
       
