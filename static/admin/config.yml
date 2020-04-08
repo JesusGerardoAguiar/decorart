@@ -112,9 +112,9 @@ collections:
     create: true
     identifier_field: identifier
     fields:
-      - { name: ImageProyect, label: ImageP, widget: image }
+      - { name: Image, label: Imagen, widget: image }
       - { name: description, label: Description }
-      - { label: identifier, name: identifier, widget: "hidden", default: "projects" }
+      - { label: identifier, name: identifier, widget: "hidden", default: "proyectos" }
 
 
       
