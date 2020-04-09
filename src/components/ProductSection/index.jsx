@@ -56,14 +56,16 @@ const ProductSection = ({ products1, products2, products3, products4 }) => {
         {products4.map(prod => (
           <ProdCircle backgroundImg={prod.prodImg}>
             <div style={{ display: "none" }} id="ProdCircle">
-              <IconDiv backgroundImg={prod.icon} />
-              <p>{prod.text}</p>
+              <Link to="/cortinas">
+                <IconDiv backgroundImg={prod.icon} />
+                <p>{prod.text}</p>
+              </Link>
             </div>
           </ProdCircle>
         ))}
         <SaleCircle>
           <div style={{ display: "none" }} id="ProdCircle">
-            <Link to='/sale'>
+            <Link to="/sale">
               <IconDiv backgroundImg={Icono11} />
               <p>Sale</p>
             </Link>
