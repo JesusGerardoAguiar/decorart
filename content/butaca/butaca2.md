@@ -1,8 +1,8 @@
 ---
 path: butacas
-title: butaca2
-description: butaca de prueba
-Image: /assets/banquetas.jpg
+title: Berger Caviglia
+description: Butaca Berger Caviglia
+Image: /assets/berger-caviglia.jpg
 identifier: butacas
 ---
 
