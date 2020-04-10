@@ -4,6 +4,8 @@ import Layout from "../components/layout"
 import { createGlobalStyle } from "styled-components"
 import styled from "styled-components"
 import Modal from "../components/Modal"
+import InfoDialog from "../components/InfoDialog"
+import InfoSvg from "../../content/assets/icons/info.svg"
 
 const GlobalStyles = createGlobalStyle`
   @font-face {
@@ -26,7 +28,12 @@ const GlobalStyles = createGlobalStyle`
 
 const ProductTemplate = props => {
   const [open, setOpen] = useState(false);
-  const [product, setProduct] = useState({ Image: "", description: '', title: '' })
+  const [openInfo, setOpenInfo] = useState(false)
+  const [product, setProduct] = useState({
+    Image: "",
+    description: "",
+    title: "",
+  })
   const { data, pageContext } = props
   const identifier = pageContext.identifier
   const products = data.allMdx.nodes
@@ -38,13 +45,19 @@ const ProductTemplate = props => {
     setOpen(false)
   }
 
-  console.log(product);
+  const handleCloseInfo = () => {
+    setOpenInfo(false);
+  }
   return (
     <Layout location={props.location}>
       <GlobalStyles />
       <MainDiv>
-        <Modal open={open} handleClose={handleOnClose} product={product}/>
-        <h1>{identifier}</h1>
+        <Modal open={open} handleClose={handleOnClose} product={product} />
+        <InfoDialog open={openInfo} handleClose={handleCloseInfo} />
+        <div style={{ display: "flex", flexDirection: "row", alignItems: 'baseline' }}>
+          <h1>{identifier}</h1>
+          <img src={InfoSvg} style={{ width: "2.5rem", marginBottom: 0 }} onClick={() => setOpenInfo(true)}/>
+        </div>
         <RowProductsDiv>
           {productsByIdentifier.map(product => (
             <ProdCircle
@@ -77,6 +90,13 @@ const MainDiv = styled.div`
     font-family: "MonteserratR";
     color: #aa5c3b;
     text-transform: uppercase;
+    margin-right: 1.5rem;
+  }
+  img{
+    cursor: pointer;
+    :hover{
+      opacity: 0.5;
+    }
   }
 `
 

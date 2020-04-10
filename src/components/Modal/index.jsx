@@ -27,7 +27,18 @@ const useStyles = makeStyles({
   p: {
     fontFamily: "MonteserratR",
     textAlign: "justify",
-  }
+  },
+  button: {
+    width: "fit-content",
+    height: "3rem",
+    width: '100%',
+    fontSize: '0.6rem',
+    backgroundColor: "white",
+    border: "3px solid #aa5c3b",
+    fontFamily: "MonteserratR",
+    textTransform: "uppercase",
+    color: "#aa5c3b",
+  },
 })
 
 export default function MediaCard({ open, handleClose, product }) {
@@ -41,21 +52,33 @@ export default function MediaCard({ open, handleClose, product }) {
       aria-describedby="alert-dialog-description"
     >
       <Card className={classes.root}>
-        <CardActionArea>
-          <CardMedia
-            className={classes.media}
-            image={product.Image}
-            title={product.title}
-          />
-          <CardContent className={classes.content}>
-            <Typography gutterBottom variant="h5" component="h2" className={classes.h2}>
-              {product.title}
-            </Typography>
-            <Typography variant="body2" color="textSecondary" component="p" style={{ overflow: 'auto', height: '5rem'}} className={classes.p}>
-              {product.description}
-            </Typography>
-          </CardContent>
-        </CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image={product.Image}
+          title={product.title}
+        />
+        <CardContent className={classes.content}>
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="h2"
+            className={classes.h2}
+          >
+            {product.title}
+          </Typography>
+          <Typography
+            variant="body2"
+            color="textSecondary"
+            component="p"
+            style={{ overflow: "auto", height: "5rem" }}
+            className={classes.p}
+          >
+            {product.description}
+          </Typography>
+          <a href={product.Image} download style={{ boxShadow: "none" }}>
+            <Button className={classes.button}>Descargar Imagen Para Pre Compra</Button>
+          </a>
+        </CardContent>
       </Card>
     </Dialog>
   )

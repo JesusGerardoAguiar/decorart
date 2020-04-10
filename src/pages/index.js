@@ -44,6 +44,7 @@ import Icono8 from "../../content/assets/icons/iconoProd8.svg"
 import Icono9 from "../../content/assets/icons/iconoProd9.svg"
 
 import Icono10 from '../../content/assets/icons/cortinas.svg'
+import Sale from "../../content/assets/icons/sale.svg"
 import Cortinas from '../../content/assets/img/cortinas.png'
 import { Helmet } from "react-helmet"
 
@@ -114,6 +115,7 @@ class Blog extends React.Component {
 
         <GlobalStyles />
         <Carousel
+
           totalSlides={2}
           StyledCarousel={StyledCarousel}
           StyledSlider={StyledSlider}
@@ -132,6 +134,10 @@ class Blog extends React.Component {
             />
           </LogoContainer>
         </Carousel>
+        <Banner>
+          <img src={Sale} />
+          <h1>Pre comprado <br /> vía web <br/>10%</h1>
+        </Banner>
         <div id="History">
           <SectionComponent
             arrayTexts={historyTexts}
@@ -188,6 +194,32 @@ const LogoContainer = styled.div`
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+`
+const Banner = styled.div`
+  background-color: #aa5c3b;
+  width: 100%;
+  height: 30rem;
+  margin-top: 2rem;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  img {
+    width: 12rem;
+  }
+  h1{
+    color: white;
+    font-family: MonteserratR;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+`
+
+const TextDiv = styled.div`
+  display: flex;
+  flex-direction: column;
 `
 
 export const StyledCarousel = styled(CarouselProvider)`
