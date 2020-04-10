@@ -1,7 +1,7 @@
 ---
 path: almoh
-title: amoh
-description: almoh
+title: Almohadones
+description: Almohadones
 Image: /assets/almohadones.jpg
 identifier: almohadones
 ---
