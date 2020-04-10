@@ -69,7 +69,7 @@ const OurProcess = () => {
             </p>
           </ProccessTextDiv>
         </ProcessDiv>
-        <Link to="/proyectos" style={{ width: "13rem", height: " 3rem",  marginTop: "2rem",  marginBottom: "2rem"  }}>
+        <Link to="/retapizados" style={{ width: "13rem", height: " 3rem",  marginTop: "2rem",  marginBottom: "2rem"  }}>
           <ButtonDiv>
             <Button>Ver más</Button>
           </ButtonDiv>
