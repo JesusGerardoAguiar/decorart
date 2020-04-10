@@ -1,8 +1,8 @@
 ---
 path: banq
-title: banq
-description: banq
-Image: /assets/banquetas.jpg
+title: Banqueta
+description: Banqueta
+Image: /assets/unnamed-1-.jpg
 identifier: banquetas
 ---
 
