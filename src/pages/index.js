@@ -97,7 +97,7 @@ const products2 = [
 const products3 = [
   { prodImg: Sofas, text: "Sofas", icon: Icono8, link: "/sofas" },
   { prodImg: Sofacama, text: "Sofacama", icon: Icono6, link: "/sofacama" },
-  { prodImg: Respaldos, text: "Respaldos", icon: Icono9, link: "/respaldos" },
+  { prodImg: Respaldos, text: "Dormitorio", icon: Icono9, link: "/respaldos" },
 ]
 
 const products4 = [
@@ -151,14 +151,14 @@ class Blog extends React.Component {
         <div id="process">
           <OurProcess />
         </div>
-        <div id="Testimonies">
+        {/* <div id="Testimonies">
           <SectionHeader
             title="Testimonios"
             hasIcon={true}
             icon={TestimonyIcon}
           />
           <Testimonies />
-        </div>
+        </div> */}
         <div id="Contact">
           <SectionHeader title="Contacto" hasIcon={true} icon={ContactIcon} />
           <div

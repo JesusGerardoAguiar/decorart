@@ -25,7 +25,7 @@ const useStyles = makeStyles({
     textTransform: "uppercase",
   },
   p: {
-    fontFamily: "DinRegular",
+    fontFamily: "MonteserratR",
     textAlign: "justify",
   }
 })

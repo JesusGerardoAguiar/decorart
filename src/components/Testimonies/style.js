@@ -30,6 +30,11 @@ export const Testimonie = styled.p`
     margin-bottom: 0.5rem;
     padding: 0 1rem;
   }
+  @media (max-width: 768px) {
+    p{
+      font-family: MonteserratR;
+    }
+  }
   color: #aa5c3b;
 `;
 
@@ -52,7 +57,11 @@ export const Name = styled.p`
   font-size: 20px;
   line-height: 30px;
   /* identical to box height, or 150% */
-
+  @media (max-width: 768px) {
+    p{
+      font-family: MonteserratR;
+    }
+  }
   color: #aa5c3b;
   margin-bottom: 0px;
 
@@ -69,7 +78,11 @@ export const Company = styled.p`
   font-size: 16px;
   line-height: 21px;
   /* identical to box height, or 131% */
-
+  @media (max-width: 768px) {
+    p{
+      font-family: MonteserratR;
+    }
+  }
   color: #aa5c3b;
 
   mix-blend-mode: normal;

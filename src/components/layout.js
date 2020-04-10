@@ -71,6 +71,9 @@ const Footer = styled.footer`
     margin-bottom: 0px;
     margin-left: 0.5rem;
   }
+  @media (max-width: 768px) {
+    margin: 0px;
+  }
 `
 
 export default Layout

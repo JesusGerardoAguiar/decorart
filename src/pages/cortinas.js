@@ -78,6 +78,12 @@ const MainDiv = styled.div`
     margin: 1rem;
     font-size: 20px;
   }
+
+  @media (max-width: 768px) {
+    p{
+      font-family: MonteserratR;
+    }
+  }
 `
 
 const RowProductsDiv = styled.div`

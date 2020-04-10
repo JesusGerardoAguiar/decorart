@@ -1,6 +1,13 @@
 import React from "react"
 import SectionHeader from "../SectionHeader"
-import { MainDiv, ProcessDiv, ProcessImg, ProccessTextDiv } from "./styles"
+import {
+  MainDiv,
+  ProcessDiv,
+  ProcessImg,
+  ProccessTextDiv,
+  ButtonDiv,
+  Button,
+} from "./styles"
 import SofaNuevo from "../../../content/assets/img/nuevo.jpg"
 import SofaReta from "../../../content/assets/img/reta.jpg"
 import Dibujo from "../../../content/assets/img/dibujo5.jpg"
@@ -62,24 +69,33 @@ const OurProcess = () => {
             </p>
           </ProccessTextDiv>
         </ProcessDiv>
-        <Link to="/proyectos" style={{ boxShadow: 'none',marginTop: '2rem',marginBottom: '2rem' }}>
-          <ProcessDiv id="projects">
-            <ProccessTextDiv>
-              <h1>Proyectos</h1>
-              <p>
-                Para realizar un proyecto de Diseño de Interiores se realizan
-                bocetos, planos escalados y perspectivas para poder definir las
-                cuestiones más técnicas, que serán completados con detalles más
-                puramente estéticos como el color, acabados, iluminación,
-                materiales, tejidos, elementos decorativos... 
-                <br /><br />Todo proyecto de
-                interiorismo, por pequeño que sea, tiene unas fases que el
-                cliente debe conocer para saber exactamente a lo se que
-                enfrenta.
-              </p>
-            </ProccessTextDiv>
-            <ProcessImg backgroundImg={Dibujo}></ProcessImg>
-          </ProcessDiv>
+        <Link to="/proyectos" style={{ width: "13rem", height: " 3rem",  marginTop: "2rem",  marginBottom: "2rem"  }}>
+          <ButtonDiv>
+            <Button>Ver más</Button>
+          </ButtonDiv>
+        </Link>
+        <ProcessDiv style={{ marginTop: "2rem" }}>
+          <ProccessTextDiv>
+            <h1>Proyectos</h1>
+            <p>
+              Para realizar un proyecto de Diseño de Interiores se realizan
+              bocetos, planos escalados y perspectivas para poder definir las
+              cuestiones más técnicas, que serán completados con detalles más
+              puramente estéticos como el color, acabados, iluminación,
+              materiales, tejidos, elementos decorativos...
+              <br />
+              <br />
+              Todo proyecto de interiorismo, por pequeño que sea, tiene unas
+              fases que el cliente debe conocer para saber exactamente a lo se
+              que enfrenta.
+            </p>
+          </ProccessTextDiv>
+          <ProcessImg backgroundImg={Dibujo}></ProcessImg>
+        </ProcessDiv>
+        <Link to="/proyectos" style={{ width: "13rem", height: " 3rem",  marginTop: "2rem",  marginBottom: "2rem"  }}>
+          <ButtonDiv>
+            <Button>Ver más</Button>
+          </ButtonDiv>
         </Link>
       </MainDiv>
     </>

@@ -37,9 +37,9 @@ export const ProcessImg = styled.div`
   border-radius: 200px;
   border: 15px solid #aa5c3b;
   @media (max-width: 768px) {
-    width: 15rem;
-    height: 15rem;
     margin-bottom: 0.5rem;
+    width: 13rem;
+    height: 13rem;
   }
 `
 export const ProccessTextDiv = styled.div`
@@ -64,5 +64,33 @@ export const ProccessTextDiv = styled.div`
     h1 {
       margin-top: 0px;
     }
+    p{
+      font-family: MonteserratR;
+    }
   }
+`
+export const Button = styled.button`
+  width: 13rem;
+  height: 3rem;
+  background-color: white;
+  border: 3px solid #aa5c3b;
+  font-family: MonteserratR;
+  text-transform: uppercase;
+  color: #aa5c3b;
+  outline: none;
+  cursor: pointer;
+
+  :hover {
+    opacity: 0.5;
+  }
+`
+
+export const ButtonDiv = styled.div`
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 `
