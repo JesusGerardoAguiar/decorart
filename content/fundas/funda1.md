@@ -1,7 +1,7 @@
 ---
 path: funda
-title: funda1
-description: funda1
+title: Funda
+description: Funda
 Image: /assets/funda.jpg
 identifier: fundas
 ---
