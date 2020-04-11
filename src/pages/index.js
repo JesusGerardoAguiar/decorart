@@ -207,6 +207,7 @@ const Banner = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   img {
     width: 12rem;
   }
@@ -226,6 +227,19 @@ const Banner = styled.div`
     text-transform: uppercase;
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+  @media (max-width: 768px) {
+    text-align: center;
+    flex-direction: column;
+    h1{
+      font-size: 1.5rem;
+    }
+    h1 #tenpercent{
+      font-size: 3.5rem;
+    }
+    img{
+      width: 8rem;
+    }
   }
 `
 

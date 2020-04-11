@@ -31,8 +31,8 @@ const useStyles = makeStyles({
   button: {
     width: "fit-content",
     height: "3rem",
-    width: '100%',
-    fontSize: '0.6rem',
+    width: "100%",
+    fontSize: "0.6rem",
     backgroundColor: "white",
     border: "3px solid #aa5c3b",
     fontFamily: "MonteserratR",
@@ -41,7 +41,7 @@ const useStyles = makeStyles({
   },
 })
 
-export default function MediaCard({ open, handleClose, product }) {
+export default function MediaCard({ open, handleClose, product, isProject }) {
   const classes = useStyles()
 
   return (
@@ -75,9 +75,15 @@ export default function MediaCard({ open, handleClose, product }) {
           >
             {product.description}
           </Typography>
-          <a href={product.Image} download style={{ boxShadow: "none" }}>
-            <Button className={classes.button}>Descargar Imagen Para Pre Compra</Button>
-          </a>
+          {isProject ? (
+            <></>
+          ) : (
+            <a href={product.Image} download style={{ boxShadow: "none" }}>
+              <Button className={classes.button}>
+                Descargar Imagen Para Pre Compra
+              </Button>
+            </a>
+          )}
         </CardContent>
       </Card>
     </Dialog>

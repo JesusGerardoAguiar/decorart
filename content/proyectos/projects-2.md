@@ -1,5 +1,5 @@
 ---
-Image: /assets/dibujo1.jpg
+Image: /assets/dsjdlb.jpeg
 description: Boceto
 identifier: proyectos
 ---

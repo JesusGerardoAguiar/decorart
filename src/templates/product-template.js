@@ -49,15 +49,23 @@ const ProductTemplate = props => {
   const handleCloseInfo = () => {
     setOpenInfo(false);
   }
+
+  const renderImage = () => {
+    if(identifier === 'proyectos'){
+      return <></>
+    }
+    return <img src={InfoSvg} style={{ width: "2.5rem", marginBottom: 0 }} onClick={() => setOpenInfo(true)}/>
+  }
+
   return (
     <Layout location={props.location}>
       <GlobalStyles />
       <MainDiv>
-        <Modal open={open} handleClose={handleOnClose} product={product} />
+        <Modal open={open} handleClose={handleOnClose} product={product} isProject={identifier === 'proyectos'} />
         <InfoDialog open={openInfo} handleClose={handleCloseInfo} />
         <div style={{ display: "flex", flexDirection: "row", alignItems: 'baseline' }}>
           <h1>{identifier}</h1>
-          <img src={InfoSvg} style={{ width: "2.5rem", marginBottom: 0 }} onClick={() => setOpenInfo(true)}/>
+          {renderImage()}
         </div>
         <RowProductsDiv>
           {productsByIdentifier.map(product => (
