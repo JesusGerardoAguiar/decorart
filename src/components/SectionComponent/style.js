@@ -15,6 +15,12 @@ export const TextDiv = styled.div`
     line-height: 20px;
     font-size: 18px;
   }
+
+  @media (max-width: 768px) {
+    p{
+      font-family: MonteserratR;
+    }
+  }
 `
 
 export const TextContainer = styled.div`

@@ -68,7 +68,7 @@ export const Button = styled.button`
   color: #aa5c3b;
   outline: none;
   cursor: pointer;
-
+  background-color: white;
   :hover {
     opacity: 0.5;
   }

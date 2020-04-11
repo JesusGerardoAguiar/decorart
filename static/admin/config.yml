@@ -106,6 +106,15 @@ collections:
       - { name: description, label: Description }
       - { name: Image, label: Imagen, widget: image }
       - { label: identifier, name: identifier, widget: "hidden", default: "sale" }
+  - name: proyectos
+    label: Proyectos
+    folder: content/proyectos
+    create: true
+    identifier_field: identifier
+    fields:
+      - { name: Image, label: Imagen, widget: image }
+      - { name: description, label: Description }
+      - { label: identifier, name: identifier, widget: "hidden", default: "proyectos" }
 
 
       
