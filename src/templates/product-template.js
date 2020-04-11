@@ -24,6 +24,7 @@ const GlobalStyles = createGlobalStyle`
     font-family: DinRegular;
     src: url(${require("../../content/assets/fonts/DIN-Regular.ttf")});
   }
+ 
 `
 
 const ProductTemplate = props => {

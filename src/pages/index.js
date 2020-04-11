@@ -65,6 +65,10 @@ const GlobalStyles = createGlobalStyle`
     font-family: DinRegular;
     src: url(${require("../../content/assets/fonts/DIN-Regular.ttf")});
   }
+  @font-face {
+    font-family: Museo;
+    src: url(${require("../../content/assets/fonts/Museo700-Regular.ttf")});
+  }
 `
 
 const historyTexts = [
@@ -136,7 +140,7 @@ class Blog extends React.Component {
         </Carousel>
         <Banner>
           <img src={Sale} />
-          <h1>Pre comprado <br /> vía web <br/>10%</h1>
+          <h1>Pre comprado <br /> vía web <br/><h1 id="tenpercent">10%</h1></h1>
         </Banner>
         <div id="History">
           <SectionComponent
@@ -198,8 +202,7 @@ const LogoContainer = styled.div`
 const Banner = styled.div`
   background-color: #aa5c3b;
   width: 100%;
-  height: 30rem;
-  margin-top: 2rem;
+  height: 25rem;
   display:flex;
   flex-direction: row;
   align-items: center;
@@ -209,8 +212,17 @@ const Banner = styled.div`
   }
   h1{
     color: white;
-    font-family: MonteserratR;
+    font-family: MonteserratB;
     font-size: 3.5rem;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  h1 #tenpercent{
+    font-family: Museo;
+    font-size: 5.5rem;
+    margin-top: 0.5rem;
+    color: white;
     text-transform: uppercase;
     margin-top: 0px;
     margin-bottom: 0px;
