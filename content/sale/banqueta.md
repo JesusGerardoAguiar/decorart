@@ -2,7 +2,8 @@
 path: prodcutooferta3
 title: Banqueta
 description: Banqueta
-Image: /assets/banqueta.jpeg
+activityImages:
+  - /assets/banqueta.jpeg
 identifier: sale
 ---
 
