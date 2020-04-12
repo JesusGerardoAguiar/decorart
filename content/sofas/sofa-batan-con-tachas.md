@@ -1,8 +1,9 @@
 ---
 path: Sofa30
-title: Sofa Batan con Tachas
-description: Sofa Batan con Tachas
-Image: /assets/img-4844.jpg
+title: Sofá Batan con Tachas
+description: Sofá Batan con Tachas
+activityImages:
+  - /assets/img-4844.jpg
 identifier: sofas
 ---
 
