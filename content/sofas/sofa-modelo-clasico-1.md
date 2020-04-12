@@ -1,9 +1,9 @@
 ---
 path: sofa2
-title: Sofa Modelo Clasico
-description: Sofa Modelo Clasico
+title: Sofá Modelo Clásico
+description: Sofá Modelo Clásico
 activityImages:
-  - /assets/30726063_2115037908523147_8408826167703896064_o.jpg
+  - /assets/20108690_1808706245822983_2139795373756799748_n.jpg
 identifier: sofas
 ---
 
