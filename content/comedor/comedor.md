@@ -2,7 +2,8 @@
 path: comedor
 title: comedor
 description: comedor
-Image: /assets/comedor.jpg
+activityImages:
+  - /assets/comedor.jpg
 identifier: comedor
 ---
 
