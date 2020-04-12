@@ -1,8 +1,0 @@
----
-path: SofáCamaSimple
-title: Sofá Cama Simple
-description: Sofá Cama Simple
-Image: /assets/img-1449.jpg
-identifier: sofacama
----
-
