@@ -2,7 +2,8 @@
 path: banq1
 title: Banqueta
 description: Banqueta
-Image: /assets/img-3139.jpg
+activityImages:
+  - /assets/img-2370.jpg
 identifier: banquetas
 ---
 
