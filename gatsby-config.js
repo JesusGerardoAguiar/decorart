@@ -87,13 +87,13 @@ module.exports = {
     //     name: `sofacama`,
     //   },
     // },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     path: `${__dirname}/content/sofas`,
-    //     name: `sofas`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/sofas`,
+        name: `sofas`,
+      },
+    },
     // {
     //   resolve: `gatsby-source-filesystem`,
     //   options: {

@@ -74,7 +74,7 @@ collections:
       - { name: path, label: Path }
       - { name: title, label: Title }
       - { name: description, label: Description }
-      - { name: Image, label: Imagen, widget: image }
+      - { name: activityImages, label: Images, widget: list,  field: {label: Image, name: image, widget: image} }
       - { label: identifier, name: identifier, widget: "hidden", default: "sofas" }
   - name: sofacama
     label: sofacama
