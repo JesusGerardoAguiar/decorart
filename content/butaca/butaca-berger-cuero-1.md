@@ -2,7 +2,9 @@
 path: butaca2022
 title: Butaca Berger Cuero
 description: 'Butaca Berger Cuero Capitoneada Respaldo '
-Image: /assets/berger-cuero.jpg
+activityImages:
+  - /assets/berger-cuero.jpg
+  - /assets/img-5300.jpg
 identifier: butacas
 ---
 
