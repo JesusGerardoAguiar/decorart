@@ -2,7 +2,9 @@
 path: butacas
 title: Berger Caviglia
 description: Butaca Berger Caviglia
-Image: /assets/berger-caviglia.jpg
+activityImages:
+  - /assets/berger-caviglia.jpg
+  - /assets/berger-caviglia.jpg
 identifier: butacas
 ---
 
