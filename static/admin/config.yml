@@ -14,7 +14,7 @@ collections:
       - { name: path, label: Path, value: butacas }
       - { name: title, label: Title }
       - { name: description, label: Description }
-      - { name: images, label: Images, widget: list,  field: {label: Image, name: image, widget: image} }
+      - { name: activityImages, label: Images, widget: list,  field: {label: Image, name: image, widget: image} }
       - { label: identifier, name: identifier, widget: "hidden", default: "butacas" }
   - name: esquinero
     label: Esquinero
@@ -24,7 +24,7 @@ collections:
       - { name: path, label: Path }
       - { name: title, label: Title }
       - { name: description, label: Description }
-      - { name: Image, label: Imagen, widget: image }
+      - { name: activityImages, label: Images, widget: list,  field: {label: Image, name: image, widget: image} }
       - { label: identifier, name: identifier, widget: "hidden", default: "esquineros" }
   - name: comedor
     label: comedor
@@ -34,7 +34,7 @@ collections:
       - { name: path, label: Path }
       - { name: title, label: Title }
       - { name: description, label: Description }
-      - { name: Image, label: Imagen, widget: image }
+      - { name: activityImages, label: Images, widget: list,  field: {label: Image, name: image, widget: image} }
       - { label: identifier, name: identifier, widget: "hidden", default: "comedor" }
   - name: fundas
     label: fundas
@@ -44,7 +44,7 @@ collections:
       - { name: path, label: Path }
       - { name: title, label: Title }
       - { name: description, label: Description }
-      - { name: Image, label: Imagen, widget: image }
+      - { name: activityImages, label: Images, widget: list,  field: {label: Image, name: image, widget: image} }
       - { label: identifier, name: identifier, widget: "hidden", default: "fundas" }
   - name: banquetas
     label: banquetas
@@ -54,7 +54,7 @@ collections:
       - { name: path, label: Path }
       - { name: title, label: Title }
       - { name: description, label: Description }
-      - { name: Image, label: Imagen, widget: image }
+      - { name: activityImages, label: Images, widget: list,  field: {label: Image, name: image, widget: image} }
       - { label: identifier, name: identifier, widget: "hidden", default: "banquetas" }
   - name: almohadones
     label: almohadones
@@ -64,7 +64,7 @@ collections:
       - { name: path, label: Path }
       - { name: title, label: Title }
       - { name: description, label: Description }
-      - { name: Image, label: Imagen, widget: image }
+      - { name: activityImages, label: Images, widget: list,  field: {label: Image, name: image, widget: image} }
       - { label: identifier, name: identifier, widget: "hidden", default: "almohadones" }
   - name: sofas
     label: sofas

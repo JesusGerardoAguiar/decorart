@@ -13,7 +13,7 @@ exports.createPages = ({ graphql, actions }) => {
             frontmatter {
               identifier
               description
-              activityImage
+              activityImages
               title
             }
           }
