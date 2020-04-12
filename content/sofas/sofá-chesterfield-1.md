@@ -2,7 +2,9 @@
 path: sofa9
 title: Sofá Chesterfield
 description: Sofá Chesterfield
-Image: /assets/img-6600.jpg
+activityImages:
+  - /assets/img-6601-1-.jpg
+  - /assets/img-6600.jpg
 identifier: sofas
 ---
 
