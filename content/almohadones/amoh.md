@@ -2,7 +2,8 @@
 path: almoh
 title: Almohadones
 description: Almohadones
-Image: /assets/almohadones.jpg
+activityImages:
+  - /assets/almohadones.jpg
 identifier: almohadones
 ---
 
