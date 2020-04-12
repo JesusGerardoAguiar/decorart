@@ -2,7 +2,9 @@
 path: Butaca15
 title: Butaca Redonda
 description: Butaca Redonda
-Image: /assets/butaca-redonda.jpg
+activityImages:
+  - /assets/butaca-redonda.jpg
+  - /assets/butaca-redonda-4-.jpg
 identifier: butacas
 ---
 
