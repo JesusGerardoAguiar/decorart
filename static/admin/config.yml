@@ -14,7 +14,7 @@ collections:
       - { name: path, label: Path, value: butacas }
       - { name: title, label: Title }
       - { name: description, label: Description }
-      - { name: Image, label: Imagen, widget: image }
+      - { name: images, label: Images, widget: list,  field: {label: Image, name: image, widget: image} }
       - { label: identifier, name: identifier, widget: "hidden", default: "butacas" }
   - name: esquinero
     label: Esquinero

@@ -13,7 +13,7 @@ exports.createPages = ({ graphql, actions }) => {
             frontmatter {
               identifier
               description
-              Image
+              activityImage
               title
             }
           }
@@ -24,7 +24,7 @@ exports.createPages = ({ graphql, actions }) => {
     if (result.errors) {
       throw result.errors
     }
-    console.log(result)
+    console.log('this is on gatsby node ' + result)
     // Create blog posts pages.
     const products = result.data.allMdx.nodes
 

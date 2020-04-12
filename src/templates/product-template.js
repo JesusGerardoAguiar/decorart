@@ -31,7 +31,7 @@ const ProductTemplate = props => {
   const [open, setOpen] = useState(false);
   const [openInfo, setOpenInfo] = useState(false)
   const [product, setProduct] = useState({
-    Image: "",
+    images: [],
     description: "",
     title: "",
   })
@@ -56,7 +56,7 @@ const ProductTemplate = props => {
     }
     return <img src={InfoSvg} style={{ width: "2.5rem", marginBottom: 0 }} onClick={() => setOpenInfo(true)}/>
   }
-
+  console.log(productsByIdentifier[0].frontmatter.activityImages[0]);
   return (
     <Layout location={props.location}>
       <GlobalStyles />
@@ -64,13 +64,13 @@ const ProductTemplate = props => {
         <Modal open={open} handleClose={handleOnClose} product={product} isProject={identifier === 'proyectos'} />
         <InfoDialog open={openInfo} handleClose={handleCloseInfo} />
         <div style={{ display: "flex", flexDirection: "row", alignItems: 'baseline' }}>
-          <h1>{identifier}</h1>
+          <h1>{identifier === 'respaldos' ? 'Dormitorio' : identifier}</h1>
           {renderImage()}
         </div>
         <RowProductsDiv>
           {productsByIdentifier.map(product => (
             <ProdCircle
-              backgroundImg={product.frontmatter.Image}
+              backgroundImg={product.frontmatter.activityImages[0]}
               onClick={() => {
                 setOpen(true)
                 setProduct(product.frontmatter)
@@ -170,7 +170,7 @@ export const pageQuery = graphql`
         frontmatter {
           identifier
           description
-          Image
+          activityImages
           title
         }
       }
