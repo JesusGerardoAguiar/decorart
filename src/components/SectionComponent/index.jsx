@@ -22,14 +22,16 @@ const SectionComponent = ({ arrayTexts, title, hasIcon, icon }) => {
             de tamaño, tapizado, colores, todo es personalizable.<br /><br /> Hoy en día,
             resulta cada vez más difícil encontrar empresas con tantos años de
             experiencia y que ofrezcan productos de calidad, hechos con
-            materiales de altísima calidad y con un exelente respaldo postventa
-            ofrecido por sus propios dueños. Nuestros clientes buscan diseño
+            materiales de altísima calidad y con un exelente respaldo post-venta
+            ofrecido por sus propios dueños. 
+            
+            <br /><br />Nuestros clientes buscan diseño
             acompañado de la mano de un buen diseño y saber que tienen la
             seguridad de estar incorporando diseño en sus hogares con muebles de
             una excelente calidad. 
             <br /><br />Trabajamos dia a dia para que eso sea posible.
             A partir de esto surge el nombre de Julio Imbriani como dueño y como
-            uno de los tapiceros mas nombrados en uruguay en los últimos
+            uno de los tapiceros mas nombrados en Uruguay en los últimos
             tiempos. Se ha lucido y expuesto durante mucho tiempo con su
             especializada y calificada mano de obra en diferentes mueblerías de
             nombre como Revello, Cobarrer, etc. Dentro de su cartera de clientes
@@ -38,8 +40,8 @@ const SectionComponent = ({ arrayTexts, title, hasIcon, icon }) => {
             Este, Museo Nacional de Artes Visuales y muchos más. Tambien elegido
             por varios diseñadores de interiores para llevar adelante sus
             diferentes proyectos.<br /><br /> Con su gran gusto e interés por la decoración
-            apararece Teresa De Marco aportando siempre su cuota calida para
-            tratar con publico y su exelente asesoramiento tanto en tapicería
+            apararece Teresa De Marco aportando siempre su cuota de calidad para
+            tratar con publico y su excelente asesoramiento tanto en tapicería
             como en cortinados. Siempre vanguardista en todo lo que es telas y
             tendencias.<br /><br /> Allá por el año 2001 aparace con gran influencia y
             entusiasmo Betania Imbriani, hija de ambos, gran apasionada por el

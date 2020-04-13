@@ -84,7 +84,7 @@ collections:
       - { name: path, label: Path }
       - { name: title, label: Title }
       - { name: description, label: Description }
-      - { name: Image, label: Imagen, widget: image }
+      - { name: activityImages, label: Images, widget: list,  field: {label: Image, name: image, widget: image} }
       - { label: identifier, name: identifier, widget: "hidden", default: "sofacama" }
   - name: respaldos
     label: respaldos
@@ -94,7 +94,7 @@ collections:
       - { name: path, label: Path }
       - { name: title, label: Title }
       - { name: description, label: Description }
-      - { name: Image, label: Imagen, widget: image }
+      - { name: activityImages, label: Images, widget: list,  field: {label: Image, name: image, widget: image} }
       - { label: identifier, name: identifier, widget: "hidden", default: "respaldos" }
   - name: sale
     label: Sale
@@ -104,7 +104,7 @@ collections:
       - { name: path, label: Path }
       - { name: title, label: Title }
       - { name: description, label: Description }
-      - { name: Image, label: Imagen, widget: image }
+      - { name: activityImages, label: Images, widget: list,  field: {label: Image, name: image, widget: image} }
       - { label: identifier, name: identifier, widget: "hidden", default: "sale" }
   - name: proyectos
     label: Proyectos
@@ -112,7 +112,7 @@ collections:
     create: true
     identifier_field: identifier
     fields:
-      - { name: Image, label: Imagen, widget: image }
+      - { name: activityImages, label: Images, widget: list,  field: {label: Image, name: image, widget: image} }
       - { name: description, label: Description }
       - { label: identifier, name: identifier, widget: "hidden", default: "proyectos" }
 

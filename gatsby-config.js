@@ -73,20 +73,20 @@ module.exports = {
         name: `fundas`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     path: `${__dirname}/content/respaldos`,
-    //     name: `respaldos`,
-    //   },
-    // },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     path: `${__dirname}/content/sofacama`,
-    //     name: `sofacama`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/respaldos`,
+        name: `respaldos`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/sofacama`,
+        name: `sofacama`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -94,20 +94,20 @@ module.exports = {
         name: `sofas`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     path: `${__dirname}/content/sale`,
-    //     name: `sale`,
-    //   },
-    // },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     path: `${__dirname}/content/proyectos`,
-    //     name: `proyectos`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/sale`,
+        name: `sale`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/proyectos`,
+        name: `proyectos`,
+      },
+    },
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
