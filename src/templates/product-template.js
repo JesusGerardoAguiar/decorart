@@ -69,7 +69,7 @@ const ProductTemplate = props => {
         <RowProductsDiv>
           {productsByIdentifier.map(product => (
             <ProdCircle
-              backgroundImg={product.frontmatter.activityImages ? product.frontmatter.activityImages[0] : ''}
+              backgroundImg={product.frontmatter.activityImages ? product.frontmatter.activityImages[0] : ''} 
               onClick={() => {
                 setOpen(true)
                 setProduct(product.frontmatter)
