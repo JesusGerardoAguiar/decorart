@@ -111,7 +111,7 @@ const MainDiv = styled.div`
 const RowProductsDiv = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
   flex-wrap: wrap;
   padding: 1rem;
