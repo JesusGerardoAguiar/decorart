@@ -56,7 +56,6 @@ const ProductTemplate = props => {
     }
     return <img src={InfoSvg} style={{ width: "2.5rem", marginBottom: 0 }} onClick={() => setOpenInfo(true)}/>
   }
-  console.log(productsByIdentifier[0].frontmatter.activityImages[0]);
   return (
     <Layout location={props.location}>
       <GlobalStyles />
@@ -70,7 +69,7 @@ const ProductTemplate = props => {
         <RowProductsDiv>
           {productsByIdentifier.map(product => (
             <ProdCircle
-              backgroundImg={product.frontmatter.activityImages[0]}
+              backgroundImg={product.frontmatter.activityImages ? product.frontmatter.activityImages[0] : ''}
               onClick={() => {
                 setOpen(true)
                 setProduct(product.frontmatter)
